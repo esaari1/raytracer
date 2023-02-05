@@ -1,0 +1,22 @@
+m3ds {
+   name     "stationV"
+   filename "resources/StationV/models/stationV_new.3ds"
+   scale    0.06
+   textureDir  "resources/StationV/textures/medres/"
+
+   storage {
+      type "kdtree"
+   }
+}
+
+m3ds {
+   name        "orion"
+   filename    "resources/OrionIII/Orion.3ds"
+   textureDir  "resources/OrionIII/"
+   scale       0.06
+   reverse     "true"
+   
+   storage {
+      type     "kdtree"
+   }
+}

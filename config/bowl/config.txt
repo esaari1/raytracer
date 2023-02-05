@@ -1,0 +1,10 @@
+config {
+   width       960
+   height      540
+   threads     8
+   boxWidth    60
+   boxHeight   60
+   camera      "config/bowl/camera.txt"
+   lights      "config/bowl/lights.txt"
+   objects     "config/bowl/objects.txt"
+}

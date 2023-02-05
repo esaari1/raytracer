@@ -1,0 +1,110 @@
+mesh {
+   name     "stationV"
+}
+
+mesh {
+   name     "orion"
+}
+
+instance {
+   transforms [
+      "scale"        [ 5000.0 5000.0 5000.0 ]
+      "translate"    [ -5800.0 -2445.571 -6500.0 ]
+   ]
+   name   "surface"
+
+   ignoreShadow "true"
+
+   object {
+      type   "sphere"
+      
+      material {
+         type  "phong"
+         kd 1.0
+         ks 0.1
+         exp 2.0
+         specularTexture "resources/earth/8081_earthspec4k-2.jpg"
+
+         texture {
+            type     "tinstance"
+            transforms [
+               "rotate"   [ 95.0 0.0 -10.0 ]
+            ]
+
+            texture {
+               type     "image"
+               filename "resources/earth/world3.png"
+               mapping  "sphere"
+            }
+         }
+
+         normalMap {
+            type     "tinstance"
+            transforms [
+               "rotate"   [ 95.0 0.0 -10.0 ]
+            ]
+
+            texture {
+               type     "image"
+               filename "resources/earth/normal.png"
+               mapping  "sphere"
+            }
+         }
+      }
+   }
+}
+
+instance {
+   transforms [
+      "scale"        [ 5000.1 5000.1 5000.1 ]
+      "translate"    [ -5800.0 -2445.571 -6500.0 ]
+   ]
+   name   "clouds"
+
+   object {
+      type   "sphere"
+      
+      material {
+         type  "matte"
+         kd 1.0
+
+         texture {
+            type     "tinstance"
+            transforms [
+               "rotate"   [ 95.0 0.0 -10.0 ]
+            ]
+
+            texture {
+               type     "image"
+               filename "resources/earth/clouds.png"
+               mapping  "sphere"
+               colorAsAlpha 1
+            }
+         }
+      }
+   }
+}
+
+instance {
+   transforms [
+      "scale"     [ 8000.0 8000.0 1.0 ]
+      "rotate"    [ 90.0 0.0 90.0 ]
+      "translate" [ -13000.0 0.0 -2100.0 ]
+   ]
+   
+   object {
+      type     "rectangle"
+      ignoreShadow "true"
+      material {
+         type  "emissive"
+         radiance 1.0
+         color    [ 1.0 1.0 1.0 ]
+         
+         texture {
+            type  "image"
+            filename "resources/images/star-cube-sides/stars0000.png"
+            mapping  "uv"
+         }
+      }
+   }
+}

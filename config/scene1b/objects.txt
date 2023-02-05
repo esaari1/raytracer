@@ -1,0 +1,78 @@
+sphere {
+   name   "surface"
+
+   transforms [
+      "rotate"       [ -45.0 0.0 0.0 ]
+      "scale"        [ 5000.0 5000.0 5000.0 ]
+      "translate"    [ 4850.036 -4723.319 3217.774 ]
+   ]
+
+   material {
+      type        "phong"
+      color       [ 3.0 3.0 3.0 ]
+      specColor   [ 0.2 0.2 0.2 ]
+      exp         20.0
+
+      texture {
+         type     "image"
+         filename "resources/earth/world3.png"
+         mapping  "sphere"
+      }
+
+      normalMap {
+         type     "image"
+         filename "resources/earth/normal.png"
+         mapping  "sphere"
+      }
+
+      specularMask {
+         type     "image"
+         filename "resources/earth/8081_earthspec4k-2.jpg"
+         mapping  "sphere"
+      }
+   }
+}
+
+sphere {
+   name   "clouds"
+
+   transforms [
+      "rotate"       [ -45.0 0.0 0.0 ]
+      "scale"        [ 5001.0 5001.0 5001.0 ]
+      "translate"    [ 4850.036 -4723.319 3217.774 ]
+   ]
+   
+   material {
+      type  "alphaBlend"
+      color [ 3.0 3.0 3.0 ]
+      alphaThreshold 0.5
+
+      texture {
+         type     "image"
+         filename "resources/earth/clouds.png"
+         mapping  "sphere"
+         colorAsAlpha 1
+      }
+   }
+}
+
+mesh {
+   name  "voyager"
+   transforms [
+      "rotate" [ 180.0 90.0 10.0 ]
+   ]
+}
+
+starBox {
+   name  "stars"
+   halfSize 10000
+   xzNegY {
+      type  "image"
+      filename "resources/images/star-cube-sides/stars0004.png"
+      mapping  "uv"
+      transforms [
+         "scaleU"   3.0
+         "scaleV"   3.0
+      ]
+   }
+}

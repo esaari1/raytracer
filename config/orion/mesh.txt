@@ -1,0 +1,10 @@
+m3ds {
+   name     "orion"
+   filename "resources/OrionIII/Orion.3ds"
+   textureDir  "resources/OrionIII/"
+   reverse     "true"
+   
+   storage {
+      type     "kdtree"
+   }
+}

@@ -1,0 +1,10 @@
+camera {
+   sampler {
+      type	"stratified"
+      strataX   2
+      strataY   2
+   }
+   angle                49.0
+   eye                  [ 49.982075 -163.710861 0.000000 ]
+   rotate               [ 90.000003 38.781746 -0.000004 ]
+}

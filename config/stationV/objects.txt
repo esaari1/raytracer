@@ -1,0 +1,16 @@
+instance {
+   transforms [
+      "translate" [ 0.0 -1.0 0.0 ]
+      "rotate"    [ 0.0 20.0 55.0 ]
+   ]
+   object {
+      type     "mesh"
+      name     "stationV"
+   }
+}
+
+starBox {
+   name     "stars"
+   count    20000
+   halfSize 1024
+}

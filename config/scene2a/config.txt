@@ -1,0 +1,12 @@
+config {
+   width       960
+   height      540
+   threads     7
+   boxWidth    60
+   boxHeight   60
+   camera      "config/scene2a/camera.txt"
+   lights      "config/scene2a/lights.txt"
+   objects     "config/scene2a/objects.txt"
+   mesh        "config/scene2a/mesh.txt"
+   animation   "config/scene2a/animation.txt"
+}

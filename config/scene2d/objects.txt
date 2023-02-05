@@ -1,0 +1,76 @@
+mesh {
+   name     "stationV"
+}
+
+mesh {
+   name     "orion"
+}
+
+instance {
+   transforms [
+      "scale"        [ 750.0 750.0 750.0 ]
+      "translate"    [ 3066.564 7402.828 560.782 ]
+   ]
+   name   "moon"
+
+   ignoreShadow "true"
+
+   object {
+      type   "sphere"
+      
+      material {
+         type  "matte"
+         kd 1.0
+
+         texture {
+            type     "tinstance"
+            transforms [
+               "rotate"   [ 90.0 0.0 0.0 ]
+            ]
+
+            texture {
+               type     "image"
+               filename "resources/moon/moonmap4k.jpg"
+               mapping  "sphere"
+            }
+         }
+
+         normalMap {
+            type     "tinstance"
+            transforms [
+               "rotate"   [ 90.0 0.0 0.0 ]
+            ]
+
+            texture {
+               type     "image"
+               filename "resources/moon/moon-normal-4k.jpg"
+               mapping  "sphere"
+            }
+         }
+      }
+   }
+}
+
+instance {
+   transforms [
+      "scale"     [ 8000.0 8000.0 1.0 ]
+      "rotate"    [ 90.0 0.0 0.0 ]
+      "translate" [ 0.0 10000.0 0.0 ]
+   ]
+   
+   object {
+      type     "rectangle"
+      ignoreShadow "true"
+      material {
+         type  "emissive"
+         radiance 1.0
+         color    [ 1.0 1.0 1.0 ]
+         
+         texture {
+            type  "image"
+            filename "resources/images/star-cube-sides/stars0004.png"
+            mapping  "uv"
+         }
+      }
+   }
+}

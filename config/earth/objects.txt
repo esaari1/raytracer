@@ -1,0 +1,56 @@
+sphere {
+   name   "surface"
+
+   transforms [
+      "rotate"   [ 0.0 85.0 0.0 ]
+      "scale"    [ 6.37814 6.37814 6.37814 ]
+   ]
+   
+   material {
+      type        "phong"
+      color       [ 2.0 2.0 2.0 ]
+      specColor   [ 0.2 0.2 0.2 ]
+      exp         20.0
+
+      texture {
+         type     "image"
+         filename "resources/earth/world3.png"
+         mapping  "sphere"
+      }
+
+      normalMap {
+         type     "image"
+         filename "resources/earth/normal.png"
+         mapping  "sphere"
+      }
+
+      specularMask {
+         type     "image"
+         filename "resources/earth/8081_earthspec4k-2.jpg"
+         mapping  "sphere"
+      }
+   }
+}
+
+sphere {
+   name   "clouds"
+
+   transforms [
+      "rotate"   [ 0.0 90.0 0.0 ]
+      "scale"    [ 6.38 6.38 6.38 ]
+   ]
+   
+   material {
+      type  "alphaBlend"
+      color [ 2.0 2.0 2.0 ]
+      alphaThreshold 0.5
+
+      texture {
+         type     "image"
+         filename "resources/earth/clouds.png"
+         mapping  "sphere"
+         colorAsAlpha 1
+      }
+   }
+}
+

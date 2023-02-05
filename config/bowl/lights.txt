@@ -1,0 +1,33 @@
+ambientOccluder {
+#ambient {
+   radiance       1.0
+   color          [ 1.0 1.0 1.0 ]
+   minColor       [ 0.0 0.0 0.0 ]
+   numSamples     64
+}
+
+environment {
+   radiance          1.0
+   color             [ 1.0 1.0 1.0 ]
+   numSamples        64
+   numLightSamples   30
+}
+
+areaLight {
+   radiance          10.0
+   color             [ 1.0 1.0 1.0 ]
+   numLightSamples   30
+
+   rectangle {
+      origin         [ -499.0 0.0 0.0 ]
+      a              [ 0.0 0.0 -200.0 ]
+      b              [ 0.0 400.0 0.0 ]
+   
+      material {
+         type        "matte"
+         color       [ 1.0 1.0 1.0 ]
+         ka          3.0
+         kd          3.0
+      }
+   }
+}

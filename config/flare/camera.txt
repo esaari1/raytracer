@@ -1,0 +1,9 @@
+camera {
+   angle    49.0
+   eye      [ 0.0 0.0 10.0 ]
+   rotate   [ 5.0 15.0 0.0 ]
+
+   sampler {
+      type  "regular"
+   }
+}

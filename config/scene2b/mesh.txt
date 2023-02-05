@@ -1,0 +1,10 @@
+m3ds {
+   name     "stationV"
+   filename "resources/StationV/models/stationV_new.3ds"
+   scale    0.06
+   textureDir  "resources/StationV/textures/medres/"
+
+   storage {
+      type "kdtree"
+   }
+}

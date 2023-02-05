@@ -1,0 +1,15 @@
+ncamera {
+   angle                49.134
+   eye                  [ 87.87 16.413 0.0 ]
+   rotate               [ -32.25 90.0 0.0 ]
+#   lensRadius           0.02
+#   focusPlaneDistance   6.0
+
+   sampler {
+      type  "stratified"
+      strataX 2
+      strataY 2
+   }
+   
+   bgColor		[ 0.2 0.2 0.2 ]
+}

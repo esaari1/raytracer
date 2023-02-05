@@ -1,0 +1,13 @@
+#position {
+#   location       [ 0.0 -30.0 50.0 ]
+#   color          [ 1.0 1.0 1.0 ]
+#   radiance       6.0
+#   halfDistance   50.0
+#}
+
+environment {
+   numSamples  128
+   numLightSamples 5
+   radiance    	25.0
+   color       [ 1.0 1.0 1.0 ]
+}

@@ -1,0 +1,18 @@
+sunHalo {
+   radius      60
+   haloRadius  270
+#   color1      [ 1.0 1.0 0.3 ]
+#   color1      [ 1.0 1.0 0.0 ]
+#   color2      [ 0.949 0.584 0.07 ]
+   color1      [ 1.0 1.0 0.55 ]
+   color2      [ 1.0 0.422 0.218 ]
+   position    [ 0.0 0.0 0.0 ]
+   sigma       2.0
+   alpha       2.0
+}
+
+lensFlare {
+   position    [ 0.0 0.0 0.0 ]
+   sigma       2.0
+   alpha       2.0
+}

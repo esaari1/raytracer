@@ -1,0 +1,11 @@
+config {
+   width       1920
+   height      1080
+   threads     8
+   boxWidth    60
+   boxHeight   60
+   camera      "config/stationV/camera.txt"
+   lights      "config/stationV/lights.txt"
+   objects     "config/stationV/objects.txt"
+   mesh        "config/stationV/mesh.txt"
+}

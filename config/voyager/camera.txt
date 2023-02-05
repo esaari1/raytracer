@@ -1,0 +1,15 @@
+camera {
+   angle                49.134
+   eye                  [ 0.0 75.0 0.0 ]
+   rotate               [ -90.0 -30.0 0.0 ]
+#   lensRadius           0.02
+#   focusPlaneDistance   6.0
+
+   sampler {
+      type  "stratified"
+      strataX 2
+      strataY 2
+   }
+   
+   bgColor		[ 0.2 0.2 0.2 ]
+}

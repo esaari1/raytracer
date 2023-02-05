@@ -1,0 +1,5 @@
+direction {
+   direction       [ -200.0 0.0 200.0 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       1.5
+}

@@ -1,0 +1,5 @@
+direction {
+   rotation       [ -90.0 0.0 27.411 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       3.0
+}

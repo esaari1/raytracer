@@ -1,0 +1,22 @@
+sphere {
+   name   "sphere1"
+
+   material {
+      type  "phong"
+      exp   20.0
+      ks    0.2
+      color [ 1.0 0.0 0.0 ]
+      specColor      [ 1.0 1.0 1.0 ]
+      reflectColor   [ 1.0 1.0 1.0 ]
+   }
+}
+
+plane {
+   point    [ 0.0 -1.0 0.0 ]
+   normal   [ 0.0 1.0 0.0 ]
+   
+   material {
+      type  "matte"
+      color [ 1.0 1.0 1.0 ]
+   }
+}

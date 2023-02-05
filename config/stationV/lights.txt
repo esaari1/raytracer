@@ -1,0 +1,18 @@
+position {
+   location       [ 0.0 10.0 10.0 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       2.0
+}
+
+position {
+   location       [ 0.0 0.89 0.0 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       1.5
+}
+
+environment {
+   radiance          1.0
+   color             [ 1.0 1.0 1.0 ]
+   numSamples        64
+   numLightSamples   10
+}

@@ -1,0 +1,87 @@
+mesh {
+   name     "stationV"
+}
+
+mesh {
+   name     "orion"
+}
+
+instance {
+   transforms [
+      "scale"        [ 5000.0 5000.0 5000.0 ]
+      "translate"    [ 5802.212 473.66 5142.717 ]
+   ]
+
+   ignoreShadow "true"
+
+   object {
+      type   "sphere"
+      name   "surface"
+      
+      material {
+         type  "phong"
+         kd 1.0
+         ks 0.1
+         exp 20.0
+         specularTexture "resources/earth/8081_earthspec4k-2.jpg"
+
+         texture {
+            type     "tinstance"
+            transforms [
+               "rotate"   [ 300.0 0.0 0.0 ]
+            ]
+
+            texture {
+               type     "image"
+               filename "resources/earth/world3.png"
+               mapping  "sphere"
+            }
+         }
+
+         normalMap {
+            type     "tinstance"
+            transforms [
+               "rotate"   [ 300.0 0.0 0.0 ]
+            ]
+
+            texture {
+               type     "image"
+               filename "resources/earth/normal.png"
+               mapping  "sphere"
+            }
+         }
+      }
+   }
+}
+
+instance {
+   transforms [
+      "scale"        [ 5000.01 5000.01 5000.01 ]
+      "translate"    [ 5802.212 473.66 5142.717 ]
+   ]
+
+   object {
+      type   "sphere"
+      name   "clouds"
+      
+      material {
+         type  "matte"
+         ka 0.25
+         kd 1.2
+
+         texture {
+            type     "tinstance"
+            transforms [
+               "rotate"   [ 270.0 0.0 0.0 ]
+            ]
+
+            texture {
+               type        "image"
+               filename    "resources/earth/clouds.png"
+               mapping     "sphere"
+               colorAsAlpha 1
+            }
+         }
+      }
+   }
+}

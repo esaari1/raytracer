@@ -1,0 +1,10 @@
+camera {
+   angle                49.134
+   eye                  [ -9.850 -31.795 -4.790 ]
+   rotate               [ 104.325 0.0 0.0 ]
+
+   sampler {
+      type	"halton"
+      samplesPerPixel 8
+   }
+}

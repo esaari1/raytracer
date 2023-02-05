@@ -1,0 +1,11 @@
+m3ds {
+   name     	"voyager"
+   filename 	"resources/voyager/voyager.3ds"
+   textureDir	"resources/voyager/"
+   scale       0.05
+   excludes    "RadioAeria"
+   
+   storage {
+      type  "kdtree"
+   }
+}

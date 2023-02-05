@@ -1,0 +1,13 @@
+direction {
+   direction      [ -0.5 -1.0 0.0 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       2.0
+   maxDistance    1000
+}
+
+direction {
+   direction      [ 3915.825 6500.0 0.0 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       1.5
+   maxDistance    1000   
+}

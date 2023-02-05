@@ -1,0 +1,10 @@
+config {
+   width       1920
+   height      1080
+   threads     8
+   boxWidth    60
+   boxHeight   60
+   camera      "config/saturn/camera.txt"
+   lights      "config/saturn/lights.txt"
+   objects     "config/saturn/objects.txt"
+}

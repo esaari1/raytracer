@@ -1,0 +1,10 @@
+camera {
+   sampler {
+      type  "halton"
+      samplesPerPixel   5
+   }
+   angle                49.134
+   eye                  [ 2.0 -8.0 6.0 ]
+   lookat               [ 0.0 20.0 0.0 ]
+   up                   [ 0.0 1.0 0.0 ]
+}

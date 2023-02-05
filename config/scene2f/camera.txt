@@ -1,0 +1,16 @@
+camera {
+   sampler {
+      type	"stratified"
+      strataX   2
+      strataY   2
+   }
+   angle                49.134
+   eye                  [ -717.724 304.225 100.269 ]
+   rotate               [ 90.0 57.532 -106.95 ]
+   
+   bgTexture {
+      type     "image"
+      filename "resources/images/star-cube-sides/stars0003.png"
+      mapping  "uv"
+   }
+}

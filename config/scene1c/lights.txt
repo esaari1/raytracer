@@ -1,0 +1,11 @@
+direction {
+   rotation       [ 68.633 -9.137 -198.163 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       2.0
+}
+
+direction {
+   rotation       [ 0.0 -90.0 0.0 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       2.0
+}

@@ -1,0 +1,57 @@
+sphere {
+   material {
+      type  "matte"
+      kd 1.0
+
+      texture {
+         type   "tinstance"
+         transforms [
+            "rotate" [ 9.0 0.0 345.0 ]
+         ]
+
+         texture {
+            type     "image"
+            filename "config/saturn/saturnmap.jpg"
+            mapping  "sphere"
+         }
+      }
+   }
+}
+
+instance {
+   object {
+      type  "annulus"
+      center [ 0.0 0.0 0.0 ]
+      normal [ 0.0 1.0 0.0 ]
+      innerRadius 1.2361
+      outerRadius 2.3266
+
+      material {
+         type  "alphaBlend"
+         kd    1.0
+         ka    0.3
+         alphaThreshold 0.2
+
+         texture {
+            type     "image"
+            filename "config/saturn/rings.png"
+            mapping  "uv"
+         }
+      }
+   }
+   
+   transforms [
+      "rotate"   [ 9.0 0.0 -15.0 ]
+   ]
+}
+
+starBox {
+   name  "stars"
+   halfSize 2000
+   yzNegX  "resources/images/star-cube-sides/stars0000.png"
+   yzPosX  "resources/images/star-cube-sides/stars0001.png"
+   xyNegZ  "resources/images/star-cube-sides/stars0002.png"
+   xyPosZ  "resources/images/star-cube-sides/stars0003.png"
+   xzNegY  "resources/images/star-cube-sides/stars0004.png"
+   xzPosY  "resources/images/star-cube-sides/stars0005.png"
+}

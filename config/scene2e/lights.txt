@@ -1,0 +1,13 @@
+direction {
+   rotate         [ 0.0 60.0 0.0 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       2.0
+   maxDistance    1000.0
+}
+
+direction {
+   rotate         [ 150.0 0.0 0.0 ]
+   color          [ 1.0 1.0 1.0 ]
+   radiance       2.0
+   maxDistance    1000.0
+}
